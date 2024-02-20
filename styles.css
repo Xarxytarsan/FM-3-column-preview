@@ -1,0 +1,144 @@
+.attribution { font-size: 11px; text-align: center; color:black}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    min-height: 100vh;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+    color:hsl(0, 0%, 95%);
+}
+
+* {
+    margin:0;
+    padding: 0;
+}
+
+.container {
+    height:500px;
+    width:900px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px;
+}
+
+.sedan-panel {
+    background-color: hsl(31, 77%, 52%);
+    height:100%;
+    width:33%;
+    box-sizing: border-box;
+    padding:45px;
+    display: flex;
+    gap:30px;
+    flex-direction: column;
+    border-radius: 8px 0 0 8px;
+}
+.SUV-panel {
+    background-color: hsl(184, 100%, 22%);
+    height:100%;
+    width:33%;
+    padding:45px;
+    box-sizing: border-box;
+    display: flex;
+    gap:30px;
+    flex-direction: column;
+}
+.luxury-panel {
+    background-color: hsl(179, 100%, 13%);
+    height:100%;
+    width:33%;
+    padding:45px;
+    box-sizing: border-box;
+    display: flex;
+    gap:30px;
+    flex-direction: column;
+    border-radius: 0 8px 8px 0;
+}
+p {
+    font-family: "lexend deca";
+    color:hsla(0, 0%, 100%, 0.75);
+    line-height: 1.6rem;
+    font-weight: 400;
+}
+h1 {
+    font-family: "big shoulders display";
+    text-transform: uppercase;
+    font-size: 2.4em;
+    font-weight: 700;
+}
+img {
+   height:40px;
+    width: 64px;
+}
+.sedan-panel button{
+    height:50px;
+    border-radius: 25px;
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    font-family: "lexend deca";
+    color:hsl(31, 77%, 52%);
+    width:150px;
+    margin-top:50px;
+    font-size: 1rem;
+}
+.SUV-panel button {   
+    height:50px;
+    border-radius: 25px;
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    font-family: "lexend deca";
+    color:hsl(184, 100%, 22%);
+    width:150px;
+    margin-top:50px;
+    font-size: 1rem;
+}
+
+.luxury-panel button {
+    height:50px;
+    border-radius: 25px;
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    font-family: "lexend deca";
+    color:hsl(179, 100%, 13%);
+    width:150px;
+    margin-top:50px;
+    font-size: 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color:hsl(0, 0%, 95%);
+    border:2px solid hsl(0, 0%, 95%);
+}
+
+@media screen and (max-width:375px)  {
+
+    body {
+        width:375px;
+    }
+    .container {
+        flex-direction: column;
+        width: 360px;
+        height: 1400px;
+        margin-top:7.5px;
+    }
+    .sedan-panel {
+        width: 100%;
+        height: 33%;
+        border-radius: 8px 8px 0 0;
+    }
+    .SUV-panel {
+        width: 100%;
+        height: 33%;
+    }
+    .luxury-panel {
+        width: 100%;
+        height: 33%;
+        border-radius: 0 0 8px 8px;
+    }
+
+}
